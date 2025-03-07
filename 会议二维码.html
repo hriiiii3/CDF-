@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>中国发展高层论坛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .qr-container:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .banner {
+            background: linear-gradient(90deg, #8B0000, #1E3A8A);
+            color: white;
+            padding: 16px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+        }
+        .qr-container p {
+            color: #8B0000;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-xl shadow-lg rounded-xl overflow-hidden bg-gray-100">
+        <div class="banner">论坛会议手册 | Forum Conference Manual</div>
+        <div class="text-center my-4">
+            <p class="text-gray-600 text-sm">请扫描二维码下载对应版本 | Please scan the QR code to download the corresponding version</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 p-4">
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="ios_qr.png" alt="iOS 端 | iOS Version" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">iOS 苹果端 </p>
+            </div>
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="android_qr.png" alt="安卓端 | Android Version" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">Android 安卓端</p>
+            </div>
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="harmony_qr.png" alt="鸿蒙端 | HarmonyOS Version" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">Harmony 鸿蒙端</p>
+            </div>
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="miniapp1_qr.png" alt="小程序1端 | Mini Program 1" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">Web 网页端</p>
+            </div>
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="miniapp2_qr.png" alt="小程序2端 | Mini Program 2" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">Wechat 微信端</p>
+            </div>
+            <div class="qr-container flex flex-col items-center p-2">
+                <img src="web_qr.png" alt="网页端 | Web Version" class="w-28 h-28 shadow-md">
+                <p class="mt-2 text-sm font-semibold">Alipay 支付宝端</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
